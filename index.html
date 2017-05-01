@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Things</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>List of Your Favorite Things</h1>
+      <h2>Please input yourt favorite things below!</h2>
+      <div class="formOne">
+        <form id= "favorite-things">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="from-control" id="name">
+          </div>
+
+          <div class="form-group">
+              <label for="favoriteOne">Favorite One:</label>
+              <input type="text" class="from-control" id="favoriteOne">
+          </div>
+
+          <div class="form-group">
+              <label for="favoriteTwo">Favorite Two:</label>
+              <input type="text" class="from-control" id="favoriteTwo">
+          </div>
+
+          <div class="form-group">
+              <label for="favoriteThree">Favorite Three:</label>
+              <input type="text" class="from-control" id="favoriteThree">
+          </div>
+
+          <button type="submit" name="button">Submit</button>
+        </form>
+      </div>
+      <div class="answers">
+              <div class="option" id="css">
+                <p>
+
+                  <br><span class = "name"></span>, here are your responses:
+                </p>
+
+                <ul>
+                  <li><span class="firstFav"></span></li>
+                  <li><span class="secondFav"></span></li>
+                  <li><span class="thirdFav"></span></li>
+                </ul>
+              </div>
+
+
+
+    </div>
+  </body>
+</html>
