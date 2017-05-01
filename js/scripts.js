@@ -1,16 +1,12 @@
 $(document).ready(function() {
   $("#favoriteThings").submit(function(event) {
 
-    //debugger;
+    var icecreams = ["favoriteOne", "favoriteTwo", "favoriteThree"]
     var nameInput = $("input#name").val();
 
-    var favoriteOne = $("input#favoriteOne").val();
-    var favoriteTwo =$("input#favoriteTwo").val();
-    var favoriteThree= $("input#favoriteThree").val();
-
-    var arrayFavorite = [favoriteOne, favoriteTwo, favoriteThree];
-    arrayFavorite.forEach(function(item) {
-      $("#unorderd").append("<li>" + item + "</li>");
+    icecreams.forEach(function(icecream) {
+      var userInput = $("input#" + icecream).val();
+      $("#unorderd").append("<li>" + userInput + "</li>");
     });
 
     $(".name").text(nameInput);
